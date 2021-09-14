@@ -13,11 +13,11 @@ public class Paddle : MonoBehaviour
     void Start()
     {
         score = 0;
-        playerSpeed = 3;
+        playerSpeed = 4;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKey(left)) {
             transform.Translate(new Vector3(-1 * Time.deltaTime, 0, 0) * playerSpeed);
